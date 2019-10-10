@@ -1,0 +1,95 @@
+body, h1, h2, ul, li, p, dd, dt, dl {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  body {
+    background:#00CED1;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 700px;
+    height: 500px;
+    background: #1BF1FF;
+    margin: 60px auto;
+    border: 2px solid #222;
+  }
+
+  .container h1 {
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 28px;
+  }
+
+  .container h1::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: #222;
+      margin: 2px auto;
+  }
+
+  #buscaCep {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+.digite {
+    width: 400px;
+    align-self: center;
+    margin: 30px 0;
+    padding: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    text-align: center;
+  }
+
+.digite::placeholder {
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+
+@media (max-width: 787px) {
+  .digite {
+    width: 200px;
+  }
+}
+
+#btnCep {
+  width: 100px;
+  align-self: center;
+  border: 2px solid black;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.labels {
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+#cidade, #estado, #avenida, #bairro {
+  font-family: 'IBM Plex Mono', monospace;
+  /* text-align: center; */
+  font-size: 18px;
+  font-style: italic;
+}
+

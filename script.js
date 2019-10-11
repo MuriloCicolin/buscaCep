@@ -31,14 +31,19 @@ function buscaCep(cep) {
     cepAvenida.value = body.logradouro;
     cepBairro.value = body.bairro;
     inputCep.value = "";
+    if(cepCidade.value === 'undefined') {
+      cepCidade.value = 'Não encontrado';
+      cepEstado.value = 'Não encontrado';
+      cepAvenida.value = 'Não encontrado';
+      cepBairro.value = 'Não encontrado';
+    }
   }, 500)
   })
   .catch(erro => {
     alert("Cep Inválido!");
+    inputCep.value = '';
     limparCampos();
-    // setLoading(false);
   })
-    // setLoading(false);
 }
 
 function limparCampos() {
@@ -47,4 +52,5 @@ function limparCampos() {
   cepAvenida.value = ("");
   cepBairro.value = ("");
 }
+
 

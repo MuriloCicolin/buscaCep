@@ -17,7 +17,7 @@ function handleClick(event) {
   cepCidade.value = 'Buscando...';
   cepEstado.value = 'Buscando...';
   cepAvenida.value = 'Buscando...';
-  cepBairro.value = 'Buscando...';
+  cepBairro.value = 'Buscando..';
 }
 
 
